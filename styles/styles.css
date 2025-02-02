@@ -1,0 +1,129 @@
+/* 
+  Josh Comeau's CSS reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 
+  Colour variables from Cambridge Arts Festival logo
+*/
+:root {
+  --colour-deep-purple: #443A47;
+  --colour-mint-green: #5CC098;
+  --colour-sky-blue: #86BFD9;
+  --colour-magenta: #CC69A9;
+  --colour-red: #E23E39;
+  --colour-golden-yellow: #E6AB46;
+  --colour-cream: #E8E1C9;
+}
+
+/* 
+  Typography
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Geist+Mono:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--colour-cream);
+}
+
+/* 
+  Base styles
+*/
+
+body {
+  background-color: var(--colour-deep-purple);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+}
+
+nav.primary-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+
+  a {
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    
+    background-color: var(--colour-sky-blue);
+    color: var(--colour-deep-purple);
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      background-color: var(--colour-mint-green);
+    }
+  }
+}
