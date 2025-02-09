@@ -127,3 +127,7 @@ nav.primary-nav {
     }
   }
 }
+
+img.map-image {
+  border-radius: 0.5rem;
+}
