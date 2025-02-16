@@ -155,6 +155,43 @@ nav.bottom-nav {
 
 /* Home page */
 
+#splash {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--colour-deep-purple);
+
+  /* Fade animation */
+  animation: fade-out 1s 2s forwards;
+
+  div.splash-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    p {
+      color: ghostwhite;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+  }
+}
+
+@keyframes fade-out {
+  to {
+    opacity: 0;
+  }
+}
+
 body.home-page {
   margin-bottom: 10rem;
 }
@@ -174,6 +211,7 @@ header.home-page-header {
     h1 {
       font-size: 1.5rem;
       font-weight: 700;
+      color: var(--colour-golden-yellow);
     }
 
     p {
