@@ -155,6 +155,10 @@ nav.bottom-nav {
 
 /* Home page */
 
+body.home-page {
+  margin-bottom: 10rem;
+}
+
 header.home-page-header {
   display: flex;
   flex-direction: column;
@@ -187,6 +191,74 @@ p.home-page-augmented-arches-text {
 }
 
 
+/* About page */
+
+header.about-page-header {
+  visibility: hidden;
+  height: 0;
+
+  /* The 5% tinnies made me do it... */
+  >* {
+    height: 0;
+  }
+}
+
+body.about-page {
+  gap: 0;
+  background-color: var(--colour-cream);
+  color: var(--colour-magenta);
+  margin-bottom: 10rem;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+}
+
+section.about-page-from-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}
+
+section.about-page-using-section {
+  max-width: 100%;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  div.about-page-using-section__image-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    img {
+      
+    }
+  }
+}
+
+
+
 /* Map page */
 
 header.map-page-header {
@@ -200,7 +272,7 @@ section.map-page-main-section {
   flex-direction: column;
   gap: 1.5rem;
   /* Need the map image to be full-screen, with red text below. */
-  position: fixed;  
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;

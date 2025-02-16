@@ -9,26 +9,56 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body class="about-page">
 
-  <header>
+  <header class="about-page-header">
     <h1>About</h1>
   </header>
 
   <main>
-    <nav class="primary-nav">
-      <a href="index.html">Home</a>
-      <a href="map.html">Map</a>
-      <a href="app/guildhall/index.html">Guildhall</a>
-      <a href="app/kings-college/index.html">Kings College</a>
-      <a href="app/great-st-marys/index.html">Great St. Mary's</a>
-    </nav>
+    <section class="about-page-from-section">
+      <h2>From:</h2>
+      <!-- <img src="images/about-page-logos.png" alt="Logos of Cambridgeshire County Council, Urban Tech Creative, etc."> -->
+      <img src="images/cambridgeshire-county-council-logo.png" alt="Cambridgeshire County Council logo">
+      <img src="images/connecting-cambridgeshire-logo.png" alt="Connecting Cambridgeshire logo">
+      <img src="images/cambridge-bid-logo.png" alt="Cambridge BID logo">
+    </section>
+
+    <section>
+      <h2>Artwork by:</h2>
+      <img src="images/coleridge-community-college-logo.png" alt="Coleridge Community College logo">
+    </section>
+
+    <section>
+      <h2>Developed by:</h2>
+      <img src="images/urban-tech-creative-logo.png" alt="Urban Tech Creative logo">
+    </section>
+
+    <section class="about-page-using-section">
+      <h2>Using:</h2>
+      <div class="about-page-using-section__image-container">
+        <div><img src="images/zappar-logo.png" alt="Zappar logo"></div>
+        <div><img src="images/immersal-logo.png" alt="Immersal logo"></div>
+      </div>
+    </section>
   </main>
 
-  <section>
-    <img src="images/about-page-logos.png" alt="Logos of Cambridgeshire County Council, Urban Tech Creative, etc.">
-  </section>
-
+  <footer>
+    <nav class="bottom-nav">
+      <a href="index.html">
+        <img class="nav-icon" src="icons/home-icon.svg" alt="Home icon">
+        <span>Home</span>
+      </a>
+      <a href="locations.html">
+        <img class="nav-icon" src="icons/scan-icon.svg" alt="Scan icon">
+        <span>Scan</span>
+      </a>
+      <a href="map.html">
+        <img class="nav-icon" src="icons/map-icon.svg" alt="Map icon">
+        <span>Map</span>
+      </a>
+    </nav>
+  </footer>
 </body>
 
 </html>
