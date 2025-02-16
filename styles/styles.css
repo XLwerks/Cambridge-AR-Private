@@ -127,7 +127,7 @@ nav.bottom-nav {
     font-weight: 600;
 
     &:hover {
-      color: var(--colour-mint-green);
+      /* color: var(--colour-mint-green); */
     }
 
     .nav-icon {
@@ -346,7 +346,7 @@ body.locations-page {
       text-decoration: none;
 
       &:hover {
-        color: var(--colour-magenta);
+        /* color: var(--colour-magenta); */
       }
 
       .nav-icon {
