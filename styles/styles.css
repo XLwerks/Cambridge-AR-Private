@@ -251,12 +251,9 @@ section.about-page-using-section {
     align-items: center;
     width: 100%;
 
-    img {
-      
-    }
+    img {}
   }
 }
-
 
 
 /* Map page */
@@ -281,5 +278,43 @@ section.map-page-main-section {
     text-align: center;
     font-size: 1.5rem;
     font-weight: 600;
+  }
+}
+
+
+/* Locations page */
+
+body.locations-page {
+
+  padding-top: 0;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  nav.locations-page-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--colour-cream);
+      font-weight: 700;
+      text-decoration: none;
+
+      &:hover {
+        color: var(--colour-magenta);
+      }
+
+      .nav-icon {
+        width: 3rem;
+        height: 3rem;
+      }
+    }
   }
 }
