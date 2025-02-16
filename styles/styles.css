@@ -137,6 +137,21 @@ nav.bottom-nav {
   }
 }
 
+.magenta-text {
+  color: var(--colour-magenta);
+}
+
+.mint-green-text {
+  color: var(--colour-mint-green);
+}
+
+.golden-yellow-text {
+  color: var(--colour-golden-yellow);
+}
+
+.red-text {
+  color: var(--colour-red);
+}
 
 /* Home page */
 
@@ -171,18 +186,28 @@ p.home-page-augmented-arches-text {
   text-align: center;
 }
 
-span.magenta-text {
-  color: var(--colour-magenta);
+
+/* Map page */
+
+header.map-page-header {
+  h1 {
+    visibility: hidden;
+  }
 }
 
-span.mint-green-text {
-  color: var(--colour-mint-green);
-}
+section.map-page-main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /* Need the map image to be full-screen, with red text below. */
+  position: fixed;  
+  top: 0;
+  left: 0;
+  width: 100%;
 
-span.golden-yellow-text {
-  color: var(--colour-golden-yellow);
-}
-
-img.map-image {
-  border-radius: 0.5rem;
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
 }
